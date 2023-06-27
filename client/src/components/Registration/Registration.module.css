@@ -1,0 +1,90 @@
+.main_div {
+  height: 90vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration_form {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-bottom: 12vh;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.inputs .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper div {
+  display: flex;
+  gap: 8%;
+}
+
+.payment_block {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.payment_block .payment_cash, .payment_none {
+  text-align: justify;
+  margin-left: 10vw;
+  display: flex;
+  gap: .5vw;
+}
+
+.payment_bank {
+  align-self: center;
+}
+
+.payment_bank button {
+  cursor: pointer;
+  width: 15vw;
+  height: 5vh;
+  background: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #FFF;
+  border: #000 .5px solid;
+  text-transform: uppercase;
+  transition: transform .3s;
+}
+
+.payment_bank button:hover {
+  transform: scale(1.1);
+}
+
+.submit_block {
+  margin-top: 5vh;
+}
+
+.submitBTN {
+  cursor: pointer;
+  width: 20vw;
+  height: 7vh;
+  background: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #FFF;
+  border: #000 .5px solid;
+  text-transform: uppercase;
+  transition: transform .3s;
+}
+
+.submitBTN:hover {
+  transform: scale(1.1);
+}

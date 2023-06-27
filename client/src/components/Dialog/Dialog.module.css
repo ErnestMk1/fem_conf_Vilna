@@ -1,0 +1,14 @@
+.main_div {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_div div {
+  width: 50%;
+}
+
+.main_div p {
+  text-align: center;
+}

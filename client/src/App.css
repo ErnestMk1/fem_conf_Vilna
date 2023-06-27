@@ -1,0 +1,4 @@
+.app {
+  background-image: linear-gradient(to left, #58cdff, #ebf8e1 25%, #ebf8e1 80%, #f7fc71);
+  z-index: 500;
+}
