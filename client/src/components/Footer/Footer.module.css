@@ -1,0 +1,23 @@
+.main_div {
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.606);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons_block div {
+  width: max-content;
+  transition: transform .3s;
+}
+
+.icons_block div:hover {
+  transform: scale(1.2);
+}
+
+.icons_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+}

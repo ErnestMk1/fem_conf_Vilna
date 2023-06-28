@@ -1,0 +1,96 @@
+.main_div {
+  position: relative;
+  min-height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  padding-top: 5vh;
+  text-align: center;
+  border-radius: 44px;
+  background: #fff76b;
+  box-shadow: inset 22px 22px 44px #bab44e,
+              inset -22px -22px 44px #ffff88;
+  color: #00000095;
+}
+
+.content_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 7vw;
+}
+
+.content_block div img {
+  width: 8vw;
+  border-radius: 15px;
+}
+
+.invitation {
+  position: absolute;
+  width: 100%;
+  bottom: 15%;
+  text-align: center;
+}
+
+.description a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform .3s;
+}
+
+.description a:hover {
+  transform: scale(1.2);
+}
+
+.social_btn {
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border: 1px solid #0077b5;
+  padding: 5px;
+  position: relative;
+  width: 8.3em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.social_btn p a {
+  position: absolute;
+  top: 0.4em;
+  left: 1.2em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.social_btn svg {
+  position: absolute;
+  top: 0.45em;
+  right: -1em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff
+}
+
+.social_btn:hover p a {
+  left: 0.6em;
+  color: #fff
+}
+
+.social_btn:hover svg {
+  opacity: 1;
+}
+
+.social_btn:hover {
+  background-color: #0077b5;
+}

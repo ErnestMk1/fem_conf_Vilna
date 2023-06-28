@@ -1,4 +1,10 @@
+@font-face {
+  font-family: "Kyiv Type";
+  src: url(https://www.behance.net/gallery/90690285/KyivType-variable-superfamily/modules/530943943) format("truetype");
+}
+
 .app {
   background-image: linear-gradient(to left, #58cdff, #ebf8e1 25%, #ebf8e1 80%, #f7fc71);
   z-index: 500;
+  font-family: 'KyivType';
 }

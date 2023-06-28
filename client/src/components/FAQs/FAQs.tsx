@@ -1,101 +1,155 @@
 import css from "./FAQs.module.css";
-import { useRef } from "react";
+import { useState } from "react";
+
+interface FAQ {
+  question: string;
+  answer: string | string[];
+  isOpen: boolean;
+};
 
 const FAQs = () => {
-  const faqs = document.querySelectorAll(`${css.faq}`);
+  const [faqs, setFaqs] = useState<FAQ[]>([
+    { question: "Коли?", answer: "7-8 липня.", isOpen: false },
+    { question: "Де?", answer: "Церква «Велика Переміна» | проспект Незалежності 2б.", isOpen: false },
+    { question: "Розклад на 7 липня", answer: [
+      "18:00 - початок | прославлення | знайомство",
+      "19:00 - «Вільна від тагяря гріху» Едуард Мирмир",
+      "19:30 - кава-брейк"
+    ], isOpen: false },
+    { question: "Розклад на 8 липня", answer: [
+      "10:00 - початок",
+      "10:30 - «Вільна, бо усвідомлюю особисті межі» Юлія Шварц",
+      "11:30 - кава-брейк",
+      "11:45 - «Вільна у збудуванні стосунків з близькими» Юлія Шварц",
+      "13:00 - обід",
+      "14:00 - «Вільна від внутрішніх стереотипів» Олена Дуб",
+      "16:00- кава-брейк",
+      "16:30 - блок «Питання-відповіді»",
+      "17:30 - завершення",
+    ], isOpen: false },
+    { question: "Який дрес-код?", answer: "Якщо у тебе є вишиванка - саме час її одягнути! Це буде виглядати святково! Якщо немає - одягни щось світле-жовте, світле-блакитне 🇺🇦 або біле)", isOpen: false }
+  ]);
 
-  faqs.forEach(faq => {
-    faq.addEventListener("click", () => {
-      faq.classList.toggle("active");
-    });
-  });
+  const toggleAnswer = (index: number) => {
+    const updatedFAQs = [...faqs];
+    updatedFAQs[index].isOpen = !updatedFAQs[index].isOpen;
+    setFaqs(updatedFAQs);
+  };
 
   return (
     <div className={css.main_div}>
-      <h2>FAQs</h2>
-      <div className={css.faq}>
-        <div className={css.question}>
-          <h3>Коли?</h3>
+      <div className={css.wrapper}>
+        <h2>FAQs</h2>
+        <div className={css.faq}>
+          <div className={css.question} onClick={() => toggleAnswer(0)}>
+            <h3>{faqs[0].question}</h3>
 
-          <svg width="15" height="10" viewBox="0 0 42 25">
-            <path
-              d="M3 3L21 21L39 3"
-              stroke="black"
-              stroke-width="7"
-              stroke-linecap="round"
-            />
-          </svg>
+            <svg width="15" height="10" fill="#FFF" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          {faqs[0].isOpen ? (
+            <div className={css.answer}>
+              <p>{faqs[0].answer}</p>
+            </div>
+          ): ""}
         </div>
-        <div className={css.answer}>
-          <p>7-8 липня.</p>
-        </div>
-      </div>
 
-      <div className={css.faq}>
-        <div className={css.question}>
-          <h3>Де?</h3>
+        <div className={css.faq}>
+          <div className={css.question} onClick={() => toggleAnswer(1)}>
+            <h3>{faqs[1].question}</h3>
 
-          <svg width="15" height="10" viewBox="0 0 42 25">
-            <path
-              d="M3 3L21 21L39 3"
-              stroke="black"
-              stroke-width="7"
-              stroke-linecap="round"
-            />
-          </svg>
+            <svg width="15" height="10" fill="#FFF" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          {faqs[1].isOpen ? (
+            <div className={css.answer}>
+            <p>{faqs[1].answer}</p>
+          </div>
+          ) : ''}
         </div>
-        <div className={css.answer}>
-          <p>Церква «Велика Переміна» | проспект Незалежності 2б.</p>
-        </div>
-      </div>
 
-      <div className={css.faq}>
-        <div className={css.question}>
-          <h3>Розклад на 7 липня</h3>
+        <div className={css.faq}>
+          <div className={css.question} onClick={() => toggleAnswer(2)}>
+            <h3>{faqs[2].question}</h3>
 
-          <svg width="15" height="10" viewBox="0 0 42 25">
-            <path
-              d="M3 3L21 21L39 3"
-              stroke="black"
-              stroke-width="7"
-              stroke-linecap="round"
-            />
-          </svg>
+            <svg width="15" height="10" fill="#FFF" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          {faqs[2].isOpen ? (
+            <div className={css.answer}>
+              {Array.isArray(faqs[2].answer) ? (
+                <ul>
+                  {faqs[2].answer.map(answ => <li>{answ}</li>)}
+                </ul>
+                ) : (
+                  <p>{faqs[2].answer}</p>
+                )}
+              </div>
+          ) : ""}
         </div>
-        <div className={css.answer}>
-          <ul>
-            <li>18:00 - початок | прославлення | знайомство</li>
-            <li>19:00 - «Вільна від тагяря гріху» Едуард Мирмир</li>
-            <li>19:30 - кава-брейк</li>
-          </ul>
-        </div>
-      </div>
 
-      <div className={css.faq}>
-        <div className={css.question}>
-          <h3>Розклад на 8 липня</h3>
+        <div className={css.faq}>
+          <div className={css.question} onClick={() => toggleAnswer(3)}>
+            <h3>{faqs[3].question}</h3>
 
-          <svg width="15" height="10" viewBox="0 0 42 25">
-            <path
-              d="M3 3L21 21L39 3"
-              stroke="black"
-              stroke-width="7"
-              stroke-linecap="round"
-            />
-          </svg>
+            <svg width="15" height="10" fill="#FFF" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          {faqs[3].isOpen ? (
+            <div className={css.answer}>
+              {Array.isArray(faqs[3].answer) ? (
+                  <ul>
+                  {faqs[3].answer.map(answ => <li>{answ}</li>)}
+                  </ul>
+                ) : (
+                  <p>{faqs[3].answer}</p>
+              )}
+            </div>
+          ) : ""}
         </div>
-        <div className={css.answer}>
-          <ul>
-            <li>10:00 - початок</li>
-            <li>10:30 - «Вільна, бо усвідомлюю особисті межі» Юлія Шварц</li>
-            <li>11:30 - кава-брейк</li>
-            <li>11:45 - «Вільна у збудуванні стосунків з близькими» Юлія Шварц</li>
-            <li>13:00 - обід</li>
-            <li>14:00 - «Вільна від внутрішніх стереотипів» Олена Дуб</li>
-            <li>16:00- кава-брейк</li>
-            <li>16:30 - блок «Питання-відповіді»</li>
-            <li>17:30 - завершення</li>
-          </ul>
+
+        <div className={css.faq}>
+          <div className={css.question} onClick={() => toggleAnswer(4)}>
+            <h3>{faqs[4].question}</h3>
+
+            <svg width="15" height="10" fill="#FFF" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          {faqs[4].isOpen ? (
+            <div className={css.answer}>
+              <p>{faqs[4].answer}</p>
+            </div>
+          ): ""}
         </div>
       </div>
     </div>

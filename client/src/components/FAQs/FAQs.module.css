@@ -1,10 +1,19 @@
 .main_div {
-  min-height: 155vh;
+  min-height: 110vh;
+  background-color: rgba(0, 0, 0, 0.606);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15vh;
+  color: #ffffffda;
+}
+
+.wrapper {
   width: 40%;
   margin: 0 auto;
 }
 
-.main_div h2 {
+.wrapper h2 {
   text-align: center;
   font-size: 2rem;
 }
@@ -12,7 +21,7 @@
 .faq {
   margin-top: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #FFF;
   cursor: pointer;
 }
 
@@ -26,17 +35,8 @@
   font-size: 1.6rem;
 }
 
-.answer {
-  max-height: 0;
-  overflow: hidden;
-}
-
 .answer p {
   padding-top: 1rem;
   line-height: 1;
   font-size: 1.4rem;
-}
-
-.fag.active .answer {
-  max-height: 300px;
 }
