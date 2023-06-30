@@ -1,6 +1,6 @@
 .main_div {
   height: 15vh;
-  background-color: rgba(0, 0, 0, 0.606);
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,4 +20,15 @@
   align-items: center;
   justify-content: center;
   gap: 5vw;
+}
+
+@media (orientation: portrait) and (min-height: 500px) and (max-height: 800px) {
+  .icons_block {
+    gap: 10vw;
+  }
+
+  .icons_block svg {
+    width: 27px;
+    height: 27px;
+  }
 }

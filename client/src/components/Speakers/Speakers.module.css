@@ -10,16 +10,7 @@
   background: #252525;
   box-shadow: inset 5px 5px 10px #1b1b1b,
               inset -5px -5px 10px #2f2f2f;
-  color: #fefefeaf;
-}
-
-.background_block {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: #00000041;
-  top: -15vh;
-  left: -10vw;
+  color: #ffffffda;
 }
 
 .content_block {
@@ -78,7 +69,7 @@
   padding: 0;
   transition: .5s;
   text-decoration: none;
-  color: #fefefeaf;
+  color: #ffffffda;
 }
 
 .social_btn svg {
@@ -95,13 +86,74 @@
 
 .social_btn:hover p a {
   left: 0.6em;
-  color: #fefefeaf
+  color: #ffffffda;
 }
 
 .social_btn:hover svg {
   opacity: 1;
 }
 
-.social_btn:hover {
-  background-color: #d256fcc2;
+@media (orientation: portrait) and (min-height: 500px) and (max-height: 600px) {
+  .main_div {
+    height: 180vh;
+  }
+
+  .content_block div img {
+    width: 12vw;
+  }
+
+  .content_block {
+    flex-direction: column;
+  }
+
+  .invitation {
+    bottom: 3%;
+    width: 80%;
+    left: 1em;
+    font-size: 1.5rem;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 600px) and (max-height: 699px) {
+  .main_div {
+    height: 160vh;
+  }
+
+  .content_block div img {
+    width: 12vw;
+  }
+
+  .content_block {
+    gap: 10vh;
+    flex-direction: column;
+  }
+
+  .invitation {
+    bottom: 3%;
+    width: 80%;
+    left: 1em;
+    font-size: 1.5rem;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 700px) and (max-height: 800px) {
+  .main_div {
+    height: 160vh;
+  }
+
+  .content_block div img {
+    width: 12vw;
+  }
+
+  .content_block {
+    gap: 10vh;
+    flex-direction: column;
+  }
+
+  .invitation {
+    bottom: 3%;
+    width: 80%;
+    left: 1em;
+    font-size: 1.5rem;
+  }
 }

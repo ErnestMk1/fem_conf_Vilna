@@ -145,7 +145,7 @@ const Registration = () => {
             <div className={`${css.wrapper} ${css.night_block}`}>
               <p className={css.wrapper_caption}>Чи потребуєте місце ночівлі?</p>
               <div className={css.night_content}>
-              <div>
+                <div>
                   <input
                     name="night_stand"
                     type="checkbox"

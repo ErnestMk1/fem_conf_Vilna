@@ -21,7 +21,7 @@
 
 .faq {
   font-size: 1.5rem;
-  line-height: 2rem;;
+  line-height: 2rem;
   margin-top: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #FFF;
@@ -42,4 +42,54 @@
   padding-top: 1rem;
   line-height: 1;
   font-size: 1.5rem;
+}
+
+@media (orientation: portrait) and (min-height: 500px) and (max-height: 699px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .question h3 {
+    font-size: 1rem;
+  }
+
+  .answer p {
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  ul {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 700px) and (max-height: 800px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .question h3 {
+    font-size: 1rem;
+  }
+
+  .answer p {
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  ul {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
 }

@@ -13,7 +13,7 @@ const Header = () => {
       </div>
 
       <div className={css.content_block}>
-        
+        <h1 className={css.caption}><i>Жіноча конференція<br></br> <b>„Вільна“</b></i></h1>
       </div>
     </div>
   );
