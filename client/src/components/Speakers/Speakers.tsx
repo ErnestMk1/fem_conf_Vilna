@@ -6,6 +6,7 @@ import olena from "../../imgs/olena.jpeg";
 const Speakers = () => {
   return (
     <div className={css.main_div}>
+      <div className={css.background_block}></div>
       <h1>Спікери</h1>
       <div className={css.content_block}>
         <div>
@@ -32,15 +33,10 @@ const Speakers = () => {
             <img src={olena} alt="" />
           </div>
           <h2>Олена Дуб</h2>
-          <p className={css.description}>- Керівниця програми «МЕСДЖ» в
-            <a
+          <p className={css.description}>- Керівниця програми «МЕСДЖ» в <a
               href="https://ubts.org.ua"
               target='_BLANK'
-              rel="noreferrer"
-            >
-              УБТС
-            </a>
-          </p>
+              rel="noreferrer">УБТС</a></p>
           <button className={css.social_btn}>
             <p>
               <a

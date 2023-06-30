@@ -26,8 +26,7 @@ const FAQs = () => {
       "16:00- кава-брейк",
       "16:30 - блок «Питання-відповіді»",
       "17:30 - завершення",
-    ], isOpen: false },
-    { question: "Який дрес-код?", answer: "Якщо у тебе є вишиванка - саме час її одягнути! Це буде виглядати святково! Якщо немає - одягни щось світле-жовте, світле-блакитне 🇺🇦 або біле)", isOpen: false }
+    ], isOpen: false }
   ]);
 
   const toggleAnswer = (index: number) => {
@@ -130,26 +129,6 @@ const FAQs = () => {
               )}
             </div>
           ) : ""}
-        </div>
-
-        <div className={css.faq}>
-          <div className={css.question} onClick={() => toggleAnswer(4)}>
-            <h3>{faqs[4].question}</h3>
-
-            <svg width="15" height="10" fill="#FFF" viewBox="0 0 42 25">
-              <path
-                d="M3 3L21 21L39 3"
-                stroke="white"
-                stroke-width="7"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          {faqs[4].isOpen ? (
-            <div className={css.answer}>
-              <p>{faqs[4].answer}</p>
-            </div>
-          ): ""}
         </div>
       </div>
     </div>

@@ -1,9 +1,18 @@
 .main_div {
   height: 100vh;
   width: 100%;
-  background-image: url(../../imgs/vilna.png);
-  background-repeat: no-repeat;
-  align-self: center;
-  background-position: center;
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.background_block {
+  height: 100vh;
+  width: 100vw;
+}
+
+.background_block .background_img {
+  min-height: 100%;
+  width: 100%;
 }

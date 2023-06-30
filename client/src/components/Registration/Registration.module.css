@@ -1,17 +1,27 @@
 .main_div {
-  height: 90vh;
+  height: 110vh;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 10vh;
+  position: relative;
 }
 
 .registration_form {
-  width: 60%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 5%;
-  margin-bottom: 12vh;
+  margin-bottom: 5vh;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-bottom: 8vh;
 }
 
 .inputs {
@@ -27,45 +37,143 @@
   align-items: center;
 }
 
-.wrapper div {
+.night_block {
+  gap: 1vh;
+}
+
+.wrapper_caption {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.form_control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 190px;
+}
+
+.form_control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #000 solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #000;
+}
+
+.form_control input:focus,
+.form_control input:valid {
+  outline: 0;
+}
+
+.form_control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form_control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  color: #000;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form_control input:focus+label span,
+.form_control input:valid+label span {
+  transform: translateY(-30px);
+}
+
+.wrapper .night_content {
   display: flex;
-  gap: 8%;
+  gap: 2vw;
+}
+
+.night_content div {
+  display: flex;
+  gap: .5vw;
 }
 
 .payment_block {
-  text-align: center;
-  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 3vh;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .payment_block .payment_cash, .payment_none {
   text-align: justify;
-  margin-left: 10vw;
+  gap: 1vw;
   display: flex;
-  gap: .5vw;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-left: 5vw;
 }
 
 .payment_bank {
   align-self: center;
 }
 
-.payment_bank button {
-  cursor: pointer;
-  width: 15vw;
-  height: 5vh;
-  background: none;
-  border: none;
-  border-radius: 15px;
-  background-color: #FFF;
-  border: #000 .5px solid;
-  text-transform: uppercase;
-  transition: transform .3s;
+.payment_bank a {
+  text-decoration: none;
 }
 
-.payment_bank button:hover {
-  transform: scale(1.1);
+.payment_bank button {
+  cursor: pointer;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.payment_bank button::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.payment_bank button:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.payment_bank button:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
 }
 
 .submit_block {
@@ -73,18 +181,133 @@
 }
 
 .submitBTN {
-  cursor: pointer;
-  width: 20vw;
-  height: 7vh;
-  background: none;
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
   border: none;
-  border-radius: 15px;
-  background-color: #FFF;
-  border: #000 .5px solid;
-  text-transform: uppercase;
-  transition: transform .3s;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
-.submitBTN:hover {
-  transform: scale(1.1);
+.submitBTN span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.submitBTN svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.submitBTN:hover .svg_wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.submitBTN:hover svg {
+  transform: translateX(2.5em) rotate(45deg) scale(1.1);
+}
+
+.submitBTN:hover span {
+  transform: translateX(9em);
+}
+
+.submitBTN:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg, #cbx_2:checked + .check svg,
+#cbx_3:checked + .check svg, #cbx_4:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg path, #cbx_2:checked + .check svg path,
+#cbx_3:checked + .check svg path, #cbx_4:checked + .check svg path {
+  stroke-dashoffset: 60;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline, #cbx_2:checked + .check svg polyline,
+#cbx_3:checked + .check svg polyline, #cbx_4:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }

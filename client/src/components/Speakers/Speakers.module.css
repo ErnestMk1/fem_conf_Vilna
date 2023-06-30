@@ -6,11 +6,20 @@
   margin-bottom: 10vh;
   padding-top: 5vh;
   text-align: center;
-  border-radius: 44px;
-  background: #fff76b;
-  box-shadow: inset 22px 22px 44px #bab44e,
-              inset -22px -22px 44px #ffff88;
-  color: #00000095;
+  border-radius: 35px;
+  background: #252525;
+  box-shadow: inset 5px 5px 10px #1b1b1b,
+              inset -5px -5px 10px #2f2f2f;
+  color: #fefefeaf;
+}
+
+.background_block {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000041;
+  top: -15vh;
+  left: -10vw;
 }
 
 .content_block {
@@ -20,6 +29,7 @@
   justify-content: center;
   text-align: center;
   gap: 7vw;
+  font-size: 1rem;
 }
 
 .content_block div img {
@@ -38,6 +48,7 @@
   text-decoration: none;
   color: inherit;
   transition: transform .3s;
+  border-bottom: solid #fefefeaf 1px;
 }
 
 .description a:hover {
@@ -45,9 +56,9 @@
 }
 
 .social_btn {
-  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background: #000;
   background-size: 400%;
-  border: 1px solid #0077b5;
+  border: 1px solid #fefefeaf;
   padding: 5px;
   position: relative;
   width: 8.3em;
@@ -67,7 +78,7 @@
   padding: 0;
   transition: .5s;
   text-decoration: none;
-  color: #FFF;
+  color: #fefefeaf;
 }
 
 .social_btn svg {
@@ -79,12 +90,12 @@
   opacity: 0;
   transition: 0.5s;
   height: 1em;
-  fill: #fff
+  fill: #fefefeaf
 }
 
 .social_btn:hover p a {
   left: 0.6em;
-  color: #fff
+  color: #fefefeaf
 }
 
 .social_btn:hover svg {
@@ -92,5 +103,5 @@
 }
 
 .social_btn:hover {
-  background-color: #0077b5;
+  background-color: #d256fcc2;
 }
