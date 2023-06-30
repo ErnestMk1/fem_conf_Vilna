@@ -1,14 +1,29 @@
 .main_div {
-  height: 50vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.main_div div {
+.background_block {
+  position: absolute;
+  height: 75%;
+  width: 90%;
+  background-image: url(../../imgs/brush_stroke_3.png);
+  background-position:right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.content_div {
   width: 50%;
+  color: #FFF;
+  z-index: 3;
 }
 
-.main_div p {
+.content_div p {
   text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 }
