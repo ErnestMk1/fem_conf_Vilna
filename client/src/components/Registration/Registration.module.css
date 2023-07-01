@@ -7,6 +7,7 @@
   align-items: center;
   margin-bottom: 10vh;
   position: relative;
+  color: #6B523B !important;
 }
 
 .registration_form {
@@ -55,12 +56,11 @@
 .form_control input {
   background-color: transparent;
   border: 0;
-  border-bottom: 2px #000 solid;
+  border-bottom: 2px #6B523B solid;
   display: block;
   width: 100%;
   padding: 15px 0;
   font-size: 18px;
-  color: #000;
 }
 
 .form_control input:focus,
@@ -79,7 +79,6 @@
   display: inline-block;
   font-size: 18px;
   min-width: 5px;
-  color: #000;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -103,29 +102,32 @@
   flex-direction: column;
   gap: 3vh;
   align-items: flex-start;
-  justify-content: center;
 }
 
-.payment_block .payment_cash, .payment_none {
-  text-align: justify;
-  gap: 1vw;
+.payment_block div {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  margin-left: 5vw;
+  align-items: center;
+  gap: .7vw;
 }
 
-.payment_bank {
+.payment_block p {
   align-self: center;
 }
 
-.payment_bank a {
+.paymnet_block_caption_2 {
+  font-size: 1.3rem;
+}
+
+.payment_transfer {
+  align-self: center;
+}
+
+.payment_transfer a {
   text-decoration: none;
 }
 
-.payment_bank button {
+.payment_transfer button {
   cursor: pointer;
   width: 130px;
   height: 40px;
@@ -133,7 +135,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(15, 15, 15);
-  border: none;
+  border: solid #6B523B 1px;
   color: white;
   font-weight: 600;
   gap: 8px;
@@ -152,7 +154,7 @@
   fill: white;
 }
 
-.payment_bank button::before {
+.payment_transfer button::before {
   width: 130px;
   height: 130px;
   position: absolute;
@@ -165,13 +167,13 @@
   mix-blend-mode: difference;
 }
 
-.payment_bank button:hover::before {
+.payment_transfer button:hover::before {
   transition-duration: .3s;
   transform: translate(100%,-50%);
   border-radius: 0;
 }
 
-.payment_bank button:active {
+.payment_transfer button:active {
   transform: translate(5px,5px);
   transition-duration: .3s;
 }
@@ -183,7 +185,7 @@
 .submitBTN {
   font-family: inherit;
   font-size: 20px;
-  background: royalblue;
+  background: #6B523B;
   color: white;
   padding: 0.7em 1em;
   padding-left: 0.9em;
@@ -265,7 +267,7 @@
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #c8ccd4;
+  stroke: #6B523B;
   stroke-width: 1.5;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -288,112 +290,29 @@
 }
 
 .check:hover svg {
-  stroke: #4285f4;
+  stroke: #6B523B;
 }
 
 #cbx:checked + .check svg, #cbx_2:checked + .check svg,
-#cbx_3:checked + .check svg, #cbx_4:checked + .check svg {
-  stroke: #4285f4;
+#cbx_3:checked + .check svg, #cbx_4:checked + .check svg
+#cbx_5:checked + .check svg, #cbx_6:checked + .check svg {
+  stroke: #6B523B;
 }
 
 #cbx:checked + .check svg path, #cbx_2:checked + .check svg path,
-#cbx_3:checked + .check svg path, #cbx_4:checked + .check svg path {
+#cbx_3:checked + .check svg path, #cbx_4:checked + .check svg path,
+#cbx_5:checked + .check svg path, #cbx_6:checked + .check svg path {
   stroke-dashoffset: 60;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
 #cbx:checked + .check svg polyline, #cbx_2:checked + .check svg polyline,
-#cbx_3:checked + .check svg polyline, #cbx_4:checked + .check svg polyline {
+#cbx_3:checked + .check svg polyline, #cbx_4:checked + .check svg polyline,
+#cbx_5:checked + .check svg polyline, #cbx_6:checked + .check svg polyline {
   stroke-dashoffset: 42;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
-}
-
-@media (orientation: portrait) and (min-height: 500px) and (max-height: 699px) {
-  .main_div {
-    height: 200vh;
-  }
-
-  .main_div h2 {
-    font-size: 1.2rem;
-  }
-
-  .form_container {
-    padding-top: 10vh;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .wrapper_caption {
-    font-size: 1rem;
-  }
-
-  .form_control label span {
-    font-size: .7rem;
-  }
-
-  .wrapper .night_content {
-    gap: 12vw;
-  }
-
-  .payment_block .payment_cash, .payment_none {
-    text-align: justify;
-    gap: 3vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-left: 8vw;
-  }
-
-  .payment_block h3 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (orientation: portrait) and (min-height: 700px) and (max-height: 800px) {
-  .main_div {
-    height: 150vh;
-  }
-
-  .main_div h2 {
-    font-size: 1.2rem;
-  }
-
-  .form_container {
-    padding-top: 10vh;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .wrapper_caption {
-    font-size: 1rem;
-  }
-
-  .form_control label span {
-    font-size: .7rem;
-  }
-
-  .wrapper .night_content {
-    gap: 12vw;
-  }
-
-  .payment_block .payment_cash, .payment_none {
-    text-align: justify;
-    gap: 3vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-left: 8vw;
-  }
-
-  .payment_block h3 {
-    font-size: 1.2rem;
-  }
 }

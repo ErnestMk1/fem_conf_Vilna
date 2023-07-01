@@ -1,25 +1,20 @@
 .main_div {
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.background_block {
-  position: absolute;
-  height: 75%;
-  width: 90%;
-  background-image: url(../../imgs/brush_stroke_3.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 70vh;
 }
 
 .content_div {
+  height: 100%;
   width: 50%;
-  color: #ffffffda;
-  z-index: 3;
+  color: #6B523B;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content_div p {
@@ -37,10 +32,6 @@
     font-size: 1rem;
     line-height: 1.5rem;
   }
-
-  .background_block {
-    width: 300vw;
-  }
 }
 
 @media (orientation: portrait) and (min-height: 700px) and (max-height: 800px) {
@@ -51,9 +42,5 @@
   .content_div p {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-  
-  .background_block {
-    width: 300vw;
   }
 }

@@ -1,16 +1,12 @@
 .main_div {
   position: relative;
-  min-height: 80vh;
+  min-height: 60vh;
   width: 80vw;
-  margin: 0 auto;
-  margin-bottom: 10vh;
-  padding-top: 5vh;
-  text-align: center;
-  border-radius: 35px;
-  background: #252525;
-  box-shadow: inset 5px 5px 10px #1b1b1b,
-              inset -5px -5px 10px #2f2f2f;
-  color: #ffffffda;
+  border-radius: 18px;
+  border: 3px solid #6B523B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content_block {
@@ -28,18 +24,11 @@
   border-radius: 15px;
 }
 
-.invitation {
-  position: absolute;
-  width: 100%;
-  bottom: 15%;
-  text-align: center;
-}
-
 .description a {
   text-decoration: none;
   color: inherit;
   transition: transform .3s;
-  border-bottom: solid #fefefeaf 1px;
+  border-bottom: solid #6B523B 1px;
 }
 
 .description a:hover {
@@ -47,16 +36,15 @@
 }
 
 .social_btn {
-  background: #000;
-  background-size: 400%;
-  border: 1px solid #fefefeaf;
+  background-color: transparent;
+  border: 1px solid #6B523B;
   padding: 5px;
   position: relative;
   width: 8.3em;
   height: 2em;
   transition: 0.5s;
   font-size: 17px;
-  border-radius: 0.4em;
+  border-radius: 3px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -69,28 +57,27 @@
   padding: 0;
   transition: .5s;
   text-decoration: none;
-  color: #ffffffda;
+  color: #6B523B;
 }
 
 .social_btn svg {
   position: absolute;
   top: 0.45em;
-  right: -1em;
+  right: -.6em;
   margin: 0;
   padding: 0;
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s;
   height: 1em;
-  fill: #fefefeaf
+  fill: #6B523B;
 }
 
 .social_btn:hover p a {
-  left: 0.6em;
-  color: #ffffffda;
+  color: #ffffff98;
 }
 
 .social_btn:hover svg {
-  opacity: 1;
+  fill: #ffffff98;
 }
 
 @media (orientation: portrait) and (min-height: 500px) and (max-height: 600px) {

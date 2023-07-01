@@ -1,5 +1,7 @@
 import css from "./Header.module.css";
-import tlo from "../../imgs/tlo.jpeg";
+import tlo from "../../imgs/klara-kulikova-vep8gaDqRxY-unsplash 1.png";
+import logo from "../../imgs/GC_logo.svg";
+import caption from "../../imgs/caption.png";
 
 const Header = () => {
   return (
@@ -13,7 +15,13 @@ const Header = () => {
       </div>
 
       <div className={css.content_block}>
-        <h1 className={css.caption}><i>Жіноча конференція<br></br> <b>„Вільна“</b></i></h1>
+        <div className={css.logo_block}>
+          <img src={logo} alt="Great Change church logo" />
+        </div>
+
+        <div className={css.caption_block}>
+          <img src={caption} alt="name of the church Great Change" />
+        </div>
       </div>
     </div>
   );

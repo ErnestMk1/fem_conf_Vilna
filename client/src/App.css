@@ -4,8 +4,7 @@
 }
 
 .app {
-  background-image: linear-gradient(to left, #63a5c1, #ebf8e1 25%, #ebf8e1 80%, #e6d45f);
-  z-index: 500;
+  background: radial-gradient(48.64% 46.67% at 50.00% 50.00%, #B5B0A2 0%, rgba(216, 196, 171, 0.00) 100%);
   font-family: 'Kyiv Type';
   overflow: hidden;
 }

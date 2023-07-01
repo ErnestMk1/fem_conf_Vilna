@@ -1,0 +1,42 @@
+.main_div {
+  color: #6B523B;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+}
+
+.first_question {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  margin-bottom: 7vh;
+}
+
+.map_block iframe {
+  border-radius: 18px;
+  border: 3px solid #6B523B;
+}
+
+.program_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule_list {
+  width: 40vw;
+  text-align: justify;
+  line-height: 2.3rem;
+}
+
+.schedule_list .schedule_item {
+  list-style: none;
+}
+
+.second_day {
+  margin-bottom: 7vh;
+}
