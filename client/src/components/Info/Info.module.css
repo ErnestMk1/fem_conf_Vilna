@@ -40,3 +40,19 @@
 .second_day {
   margin-bottom: 7vh;
 }
+
+@media (orientation: portrait) and (min-height: 500px) and (max-height: 800px) {
+  .main_div h1 {
+    font-size: 1.5rem;
+  }
+
+  .map_block iframe {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .schedule_list {
+    width: 80vw;
+    margin-right: 10vw;
+  }
+}

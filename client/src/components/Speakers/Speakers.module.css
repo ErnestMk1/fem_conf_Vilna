@@ -80,67 +80,17 @@
   fill: #ffffff98;
 }
 
-@media (orientation: portrait) and (min-height: 500px) and (max-height: 600px) {
-  .main_div {
-    height: 180vh;
-  }
-
-  .content_block div img {
-    width: 12vw;
-  }
-
+@media (orientation: portrait) and (min-height: 500px) and (max-height: 800px) {
   .content_block {
     flex-direction: column;
-  }
-
-  .invitation {
-    bottom: 3%;
-    width: 80%;
-    left: 1em;
-    font-size: 1.5rem;
-  }
-}
-
-@media (orientation: portrait) and (min-height: 600px) and (max-height: 699px) {
-  .main_div {
-    height: 160vh;
-  }
-
-  .content_block div img {
-    width: 12vw;
-  }
-
-  .content_block {
     gap: 10vh;
-    flex-direction: column;
-  }
-
-  .invitation {
-    bottom: 3%;
-    width: 80%;
-    left: 1em;
-    font-size: 1.5rem;
-  }
-}
-
-@media (orientation: portrait) and (min-height: 700px) and (max-height: 800px) {
-  .main_div {
-    height: 160vh;
   }
 
   .content_block div img {
-    width: 12vw;
+    width: 25vw;
   }
 
-  .content_block {
-    gap: 10vh;
-    flex-direction: column;
-  }
-
-  .invitation {
-    bottom: 3%;
-    width: 80%;
-    left: 1em;
-    font-size: 1.5rem;
+  .main_div {
+    padding: 1em 0;
   }
 }

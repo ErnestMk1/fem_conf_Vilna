@@ -47,3 +47,18 @@
 .caption_block img {
   width: 90vw;
 }
+
+@media (orientation: portrait) and (min-height: 500px) and (max-height: 800px) {
+  .background_block .background_img {
+    min-width: 300%;
+    height: 100%;
+  }
+
+  .logo_block img {
+    width: 50vw;
+  }
+
+  .caption_block img {
+    width: 170vw;
+  }
+}
