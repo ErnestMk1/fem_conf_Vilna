@@ -80,7 +80,7 @@
   fill: #ffffff98;
 }
 
-@media (orientation: portrait) and (min-height: 500px) and (max-height: 800px) {
+@media (orientation: portrait) and (min-height: 500px) and (max-height: 900px) {
   .content_block {
     flex-direction: column;
     gap: 10vh;
