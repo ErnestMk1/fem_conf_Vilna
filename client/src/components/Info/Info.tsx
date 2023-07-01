@@ -6,7 +6,7 @@ const Info = () => {
     <div className={css.main_div}>
       <h1 className={css.info_caption}>
         Реєструйся на конференцію «Вільна», <br></br>де ми
-        чесно, щиро і відверто поговоримо про<br className={css.breakpoint}></br>
+        чесно, щиро і відверто поговоримо про <br className={css.breakpoint}></br>
         сердечне.
       </h1>
 
