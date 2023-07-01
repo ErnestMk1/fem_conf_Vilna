@@ -55,4 +55,8 @@
     width: 80vw;
     margin-right: 10vw;
   }
+
+  .breakpoint {
+    display: none;
+  }
 }

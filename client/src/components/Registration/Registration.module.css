@@ -227,6 +227,17 @@
   transform: scale(0.95);
 }
 
+.support_block {
+  margin-top: 7vh;
+  font-size: 1rem;
+}
+
+.support_block a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: solid #6B523B 1px;
+}
+
 @keyframes fly-1 {
   from {
     transform: translateY(0.1em);
@@ -343,5 +354,10 @@
 
   .inputs {
     gap: 0;
+  }
+
+  .support_block {
+    width: 70vw;
+    font-size: 1rem;
   }
 }

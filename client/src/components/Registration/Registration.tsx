@@ -303,6 +303,12 @@ const Registration = () => {
           <span>Зареєструватися</span>
         </button>
       </div>
+
+      <div className={css.support_block}>
+        <p>
+          *Якщо залишились запитання, дзвоніть на номер: <a href="tel:+380676864089">+380676864089</a>
+        </p>
+      </div>
     </div>
   );
 };

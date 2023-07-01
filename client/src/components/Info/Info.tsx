@@ -5,8 +5,8 @@ const Info = () => {
   return (
     <div className={css.main_div}>
       <h1 className={css.info_caption}>
-        Реєструйся на конференцію «Вільна», де ми<br></br>
-        чесно, щиро і відверто поговоримо про<br></br>
+        Реєструйся на конференцію «Вільна», <br></br>де ми
+        чесно, щиро і відверто поговоримо про<br className={css.breakpoint}></br>
         сердечне.
       </h1>
 
@@ -42,7 +42,7 @@ const Info = () => {
 
           <ul className={css.schedule_list}>
             <li className={css.schedule_item}>18:00 - початок | прославлення | знайомство</li>
-            <li className={css.schedule_item}>19:00 - «Вільна від тагяря гріху» Едуард Мирмир</li>
+            <li className={css.schedule_item}>19:00 - «Народжена вільною» Едуард Мирмир</li>
             <li className={css.schedule_item}>19:30 - кава-брейк</li>
           </ul>
         </div>
