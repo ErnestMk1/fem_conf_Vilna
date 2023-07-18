@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fem_conf_Vilna/static/css/main.3165dff8.css",
-    "main.js": "/fem_conf_Vilna/static/js/main.3958e529.js",
+    "main.css": "/fem_conf_Vilna/static/css/main.8671c3d5.css",
+    "main.js": "/fem_conf_Vilna/static/js/main.1356263b.js",
     "static/js/787.c4e7f8f9.chunk.js": "/fem_conf_Vilna/static/js/787.c4e7f8f9.chunk.js",
     "static/media/klara-kulikova-vep8gaDqRxY-unsplash 1.png": "/fem_conf_Vilna/static/media/klara-kulikova-vep8gaDqRxY-unsplash 1.354ef5b5fbf423342829.png",
     "static/media/Olena_new.png": "/fem_conf_Vilna/static/media/Olena_new.e23c48c1bc899ac6fe3d.png",
@@ -10,12 +10,12 @@
     "static/media/caption.png": "/fem_conf_Vilna/static/media/caption.7f87934a25f7369fa948.png",
     "static/media/GC_logo.svg": "/fem_conf_Vilna/static/media/GC_logo.760c196431ca3dc6775fc94b543ee39f.svg",
     "index.html": "/fem_conf_Vilna/index.html",
-    "main.3165dff8.css.map": "/fem_conf_Vilna/static/css/main.3165dff8.css.map",
-    "main.3958e529.js.map": "/fem_conf_Vilna/static/js/main.3958e529.js.map",
+    "main.8671c3d5.css.map": "/fem_conf_Vilna/static/css/main.8671c3d5.css.map",
+    "main.1356263b.js.map": "/fem_conf_Vilna/static/js/main.1356263b.js.map",
     "787.c4e7f8f9.chunk.js.map": "/fem_conf_Vilna/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3165dff8.css",
-    "static/js/main.3958e529.js"
+    "static/css/main.8671c3d5.css",
+    "static/js/main.1356263b.js"
   ]
 }
