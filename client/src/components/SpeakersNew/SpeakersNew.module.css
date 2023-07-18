@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8vh;
+  gap: 3vh;
 }
 
 .speaker_block {
@@ -16,8 +16,26 @@
   font-size: 1.1rem;
 }
 
-.speakerDescription {
-  margin-bottom: 3vh;
+.speakerName a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  transition: all .4s;
+}
+
+.speakerName a svg {
+  transition: all .4s;
+}
+
+.speakerName a h1 {
+  font-size: 1.5rem;
+}
+
+.speakerName a:hover svg {
+  transform: scale(1.15);
 }
 
 .speaker_block img {
@@ -25,7 +43,7 @@
 }
 
 .topic {
-  width: 70vw;
+  width: 23vw;
   text-align: center;
 }
 
@@ -37,9 +55,33 @@
   border-radius: 5px;
 }
 
+.speakersMapping {
+  display: flex;
+  gap: 10vw;
+  align-items: flex-start;
+  border: solid 2px #6B523B;
+  padding: 3em;
+  border-radius: 15px;
+  margin-bottom: 6vh;
+}
+
+@media (orientation: landscape) and (min-width: 1350px) and (max-width: 1400px) {
+  .speakersMapping {
+    padding: 1.5em;
+  }
+}
+
 @media (orientation: portrait) and (min-height: 560px) and (max-height: 900px) {
+  .main_div {
+    gap: 0;
+  }
+
   .main_div h1 {
     font-size: 1.5rem;
+  }
+
+  .speakerName a {
+    gap: 3vw;
   }
 
   .speaker_block h1 {
@@ -47,7 +89,7 @@
   }
 
   .speaker_block img {
-    width: 25vw;
+    width: 35vw;
   }
 
   .speaker_block {
@@ -66,6 +108,16 @@
   .video_block iframe {
     width: 300px;
     height: 168.75px;
+  }
+
+  .speakersMapping {
+    flex-direction: column;
+    border: none;
+    gap: 10vh;
+  }
+
+  .topic {
+    width: 75vw;
   }
 }
 
