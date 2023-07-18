@@ -19,7 +19,11 @@ const BuyNew = () => {
 
           <div className={css.btn_block}>
             <button className={css.btn}>
-              <a href="https://pro-grani.life/vilna">КУПИТИ</a>
+              <a
+                href="https://pro-grani.life/vilna"
+                target="_blank"
+                rel="noreferrer"
+              >КУПИТИ</a>
             </button>
           </div>
         </div>
@@ -40,7 +44,11 @@ const BuyNew = () => {
 
           <div className={css.btn_block}>
             <button className={css.btn}>
-              <a href="https://pro-grani.life/vilna_grani">КУПИТИ</a>
+              <a
+                href="https://pro-grani.life/vilna_grani"
+                target="_blank"
+                rel="noreferrer"
+              >КУПИТИ</a>
             </button>
           </div>
         </div>
