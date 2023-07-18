@@ -14,11 +14,12 @@ const BuyNew = () => {
               <li>відеозаписи семінарів трьох спікерів + таймкоди</li><br />
               <li>доступ до матеріалу НАЗАВЖДИ</li><br />
             </ul>
+            <p className={css.price_tag}>15$</p>
           </div>
 
           <div className={css.btn_block}>
             <button className={css.btn}>
-              <a href="payment">15$</a>   {/* лінка на оплату */}
+              <a href="https://pro-grani.life/vilna">КУПИТИ</a>
             </button>
           </div>
         </div>
@@ -34,11 +35,12 @@ const BuyNew = () => {
               <li>практика і відповіді на ваші питання протягом 1 тижня</li><br />
               <li>доступ до матеріалу чата і до семінарів БЕЗСТРОКОВИЙ</li><br />
             </ul>
+            <p className={css.price_tag}>35$</p>
           </div>
 
           <div className={css.btn_block}>
             <button className={css.btn}>
-              <a href="payment">35$</a>     {/* лінка на оплату */}
+              <a href="https://pro-grani.life/vilna_grani">КУПИТИ</a>
             </button>
           </div>
         </div>

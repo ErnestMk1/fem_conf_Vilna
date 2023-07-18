@@ -80,6 +80,10 @@
   margin-bottom: 7vh;
 }
 
+.price_tag {
+  text-align: center;
+}
+
 @media (orientation: portrait) and (min-height: 560px) and (max-height: 900px) {
   .main_div h1 {
     font-size: 1.4rem;
