@@ -1,17 +1,19 @@
 import './App.css';
 import Dialog from './components/Dialog/Dialog';
 import Header from './components/Header/Header';
-import Registration from './components/Registration/Registration';
 import Footer from './components/Footer/Footer';
-import Info from './components/Info/Info';
+import SpeakersNew from './components/SpeakersNew/SpeakersNew';
+import BuyNew from './components/BuyNew/BuyNew';
+import Content from './components/Content/Content';
 
 const App = () => {
   return (
     <div className="app">
       <Header />
       <Dialog />
-      <Info />
-      <Registration />
+      <Content />
+      <SpeakersNew />
+      <BuyNew />
       <Footer />
     </div>
   );
