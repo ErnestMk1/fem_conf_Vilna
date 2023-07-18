@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.2da2858e.css",
+    "main.js": "/react-gh-pages/static/js/main.3b5480b7.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/react-gh-pages/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/klara-kulikova-vep8gaDqRxY-unsplash 1.png": "/react-gh-pages/static/media/klara-kulikova-vep8gaDqRxY-unsplash 1.354ef5b5fbf423342829.png",
+    "static/media/Olena_new.png": "/react-gh-pages/static/media/Olena_new.e23c48c1bc899ac6fe3d.png",
+    "static/media/Julia_new.png": "/react-gh-pages/static/media/Julia_new.5cfbbdcf84973a7f5305.png",
+    "static/media/Edward_new.png": "/react-gh-pages/static/media/Edward_new.28009a18d21200472dc0.png",
+    "static/media/caption.png": "/react-gh-pages/static/media/caption.7f87934a25f7369fa948.png",
+    "static/media/GC_logo.svg": "/react-gh-pages/static/media/GC_logo.760c196431ca3dc6775fc94b543ee39f.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.2da2858e.css.map": "/react-gh-pages/static/css/main.2da2858e.css.map",
+    "main.3b5480b7.js.map": "/react-gh-pages/static/js/main.3b5480b7.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/react-gh-pages/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2da2858e.css",
+    "static/js/main.3b5480b7.js"
+  ]
+}
