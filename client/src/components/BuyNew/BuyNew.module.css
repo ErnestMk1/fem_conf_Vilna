@@ -91,6 +91,10 @@
     line-height: 1.5rem;
   }
 
+  .btn_block a .btn {
+    width: 100px;
+  }
+
   .plans_block {
     flex-direction: column;
   }
@@ -98,28 +102,10 @@
   .plans_block .solo_plan, .plans_block .group_plan {
     font-size: 1rem;
     min-width: 75vw;
-    height: 80vh;
+    height: 550px;
   }
 
   .plans_block h2 {
     font-size: 1.3rem;
-  }
-}
-
-@media (orientation: portrait) and (min-height: 650px) and (max-height: 700px) {
-  .plans_block .solo_plan, .plans_block .group_plan {
-    height: 70vh;
-  }
-}
-
-@media (orientation: portrait) and (min-height: 701px) and (max-height: 749px) {
-  .plans_block .solo_plan, .plans_block .group_plan {
-    height: 60vh;
-  }
-}
-
-@media (orientation: portrait) and (min-height: 750px) and (max-height: 900px) {
-  .plans_block .solo_plan, .plans_block .group_plan {
-    height: 55vh;
   }
 }
