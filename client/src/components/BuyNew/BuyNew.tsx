@@ -8,7 +8,7 @@ const BuyNew = () => {
       <div className={css.plans_block}>
         <div className={css.solo_plan}>
           <div className={css.content_block}>
-            <h2>“Соло”</h2>
+            <h2>„Соло“</h2>
 
             <ul>
               <li>відеозаписи семінарів трьох спікерів + таймкоди</li><br />

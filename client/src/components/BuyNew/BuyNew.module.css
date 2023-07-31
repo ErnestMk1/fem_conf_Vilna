@@ -85,6 +85,10 @@
   font-size: 1.5rem;
 }
 
+.plans_block .group_plan {
+  display: none;
+}
+
 @media (orientation: portrait) and (min-height: 560px) and (max-height: 900px) {
   .main_div h1 {
     font-size: 1.4rem;
@@ -102,7 +106,7 @@
   .plans_block .solo_plan, .plans_block .group_plan {
     font-size: 1rem;
     min-width: 75vw;
-    height: 550px;
+    /* height: 550px; */
   }
 
   .plans_block h2 {
